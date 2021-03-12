@@ -1,0 +1,84 @@
+<html ng-app="app">
+
+<head>
+    <title>EMS</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <!-- <link href="../node_modules/angular-material/angular-material.min.css" rel="stylesheet" /> -->
+    <base href="/">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body style="background-color:#E6E6FA">
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <div class="container">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+
+                    <md-icon class="white-icon">menu</md-icon>
+                </md-button>
+
+                <h2 flex="" md-truncate="">STORE</h2>
+                <!-- <a ui-sref="" class="btn btn-primary">Users</a> -->
+                <a ui-sref="viewProduct" class="btn btn-primary">Product</a>
+                <md-button class="md-icon-button" aria-label="Android">
+                    <md-icon>favorite</md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Android">
+                    <md-icon>shopping_cart</md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="More">
+                    <md-icon>person</md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="More">
+                    <md-icon>more_vert</md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <!-- routeProvider -->
+        <!-- <div ng-view></div> -->
+
+
+        <!-- stateProvider -->
+        <div ui-view></div>
+    </div>
+
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/app/app.routes.js"></script>
+    <script type="text/javascript" src="/app/components/user/user.controller.js"></script>
+    <script type="text/javascript" src="/app/components/login/login.controller.js"></script>
+    <script type="text/javascript" src="/app/components/user/user-edit/user-edit.controller.js"></script>
+    <script type="text/javascript" src="/app/components/user/user-add/user-add.controller.js"></script>
+
+    <script type="text/javascript" src="/app/components/login/login.service.js"></script>
+
+    <script type="text/javascript" src="/app/components/dashboard/dashboard.controller.js"></script>
+
+
+    <script type="text/javascript" src="/app/components/user/user.service.js"></script>
+    <!-- <script type="text/javascript" src="/app/admin/controllers/dashboardCtrl.js"></script>
+    <script type="text/javascript" src="/app/admin/controllers/userCtrl.js"></script>
+    <script type="text/javascript" src="/app/admin/controllers/productCtrl.js"></script>
+    <script type="text/javascript" src="/app/admin/controllers/editUserCtrl.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+
+
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-aria/angular-aria.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+
+
+    <!-- <script src="../node_modules/angular-material/angular-material.min.js"></script> -->
+
+
+
+</body>
+
+</html>

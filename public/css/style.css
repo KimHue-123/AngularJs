@@ -1,0 +1,65 @@
+.error-msg {
+    color: #ff2a00;
+    display: block;
+    font-size: 1.0em;
+    margin: 4px 0 -10px;
+}
+
+hr {
+    border-color: transparent;
+}
+
+.cap:first-letter {
+    text-transform: uppercase;
+}
+
+
+/* .alt {
+    background-color: #ccc;
+} */
+
+md-toolbar .md-button.md-icon-button .favorite-icon {
+    fill: #DE3641;
+}
+
+md-toolbar .md-button.md-icon-button .white-icon {
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    padding: 0px;
+}
+
+.formUser {
+    margin: 20px;
+    background-color: lightpink;
+    width: 500px;
+    height: auto;
+}
+
+.baseUser {
+    margin: 20px;
+}
+
+.formLogin {
+    margin: auto 15%;
+    min-width: 280px;
+}
+
+.titleForm {
+    text-align: center;
+    margin-top: 15%;
+}
+
+
+/* .baseLogin {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10%;
+} */
+
+
+/* .dialogContent {
+    background-color: lightpink;
+} */
