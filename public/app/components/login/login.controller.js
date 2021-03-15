@@ -26,6 +26,6 @@ loginModule.controller('LoginController', function($scope, LoginService, $filter
                 newLogin();
             }
         };
-        init();
+        //init();
     }
 })

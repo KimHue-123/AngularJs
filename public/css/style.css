@@ -45,12 +45,77 @@ md-toolbar .md-button.md-icon-button .white-icon {
 .formLogin {
     margin: auto 15%;
     min-width: 280px;
+    max-width: 545px;
+}
+
+.form-actions {
+    text-align: center;
 }
 
 .titleForm {
     text-align: center;
     margin-top: 15%;
 }
+
+md-toast.md-success-toast-theme .md-toast-content {
+    background-color: green;
+}
+
+md-toast.md-error-toast-theme .md-toast-content {
+    background-color: maroon;
+}
+
+md-toast {
+    left: calc(50vw - 200px);
+}
+
+.containerForContent {
+    margin-left: 2%;
+    margin-right: 2%;
+    min-width: 600px;
+}
+
+.sidenav {
+    width: 15%;
+    max-width: 210px;
+    margin-top: 62px;
+    text-align: center;
+    background-color: rgb(158, 179, 241);
+}
+
+.sidenav md-list a {
+    color: black;
+}
+
+.sidenav md-list:hover {
+    background-color: #ccc;
+}
+
+.listSidenav {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+a,
+a:link {
+    text-decoration: none;
+}
+
+.rowHover:hover {
+    background-color: #ccc;
+}
+
+
+/* #toaster {
+    position: fixed;
+    top: 56px;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: burlywood;
+    color: red;
+} */
 
 
 /* .baseLogin {

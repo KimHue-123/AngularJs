@@ -1,4 +1,4 @@
-<html ng-app="app">
+<html ng-app="app" ng-controller="AppController">
 
 <head>
     <title>EMS</title>
@@ -15,7 +15,7 @@
     <div class="container">
         <md-toolbar class="md-hue-2">
             <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+                <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleLeft()">
 
                     <md-icon class="white-icon">menu</md-icon>
                 </md-button>
@@ -37,15 +37,34 @@
                 </md-button>
             </div>
         </md-toolbar>
-
+        <md-sidenav md-component-id="left" class="sidenav">
+            <md-list class="listSidenav">
+                <a href="#">Product</a>
+            </md-list>
+            <md-list class="listSidenav">
+                <a href="#">Product</a>
+            </md-list>
+            <md-list class="listSidenav">
+                <a href="#">Product</a>
+            </md-list>
+        </md-sidenav>
         <!-- routeProvider -->
         <!-- <div ng-view></div> -->
 
 
         <!-- stateProvider -->
-        <div ui-view></div>
+        <div ui-view class="containerForContent"></div>
     </div>
 
+    <!-- <script>
+        var app = angular.module('app', [])
+        app.controller('AppController', function($scope, $mdSidenav) {
+            $scope.toggleLeft = function() {
+                console.log("click toggle")
+                    //$mdSidenav('left').toggle();
+            };
+        })
+    </script> -->
     <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -54,6 +73,8 @@
     <script type="text/javascript" src="/app/components/login/login.controller.js"></script>
     <script type="text/javascript" src="/app/components/user/user-edit/user-edit.controller.js"></script>
     <script type="text/javascript" src="/app/components/user/user-add/user-add.controller.js"></script>
+    <!-- <script type="text/javascript" src="/app/appCtrl.js"></script> -->
+
 
     <script type="text/javascript" src="/app/components/login/login.service.js"></script>
 

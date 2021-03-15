@@ -1,4 +1,5 @@
 <hr>
+<div id="toaster"></div>
 <div class="row baseUser">
     <md-button style="background-color: lightcoral;" ng-click="addUser($event)">add</md-button>
     <table class="table-responsive">
@@ -12,7 +13,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="user in userList" ng-class-odd="'alt'">
+            <tr ng-repeat="user in userList" ng-class-odd="'alt'" class="rowHover">
                 <td class="col-xs-2 cap">{{user.id}}</td>
                 <td class="col-xs-2 cap">{{user.userName}}</td>
                 <td class="col-xs-2 strong">{{user.firstName}}</td>

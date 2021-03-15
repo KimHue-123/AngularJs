@@ -9,6 +9,16 @@ var app = angular.module('app', [
     'userEditModule',
     'userAddModule'
 ])
+
+app.controller('AppController', function($scope, $mdSidenav, $timeout) {
+    $scope.toggleLeft = function() {
+        $timeout(function() {
+            $mdSidenav('left').toggle();
+        })
+
+        console.log("adfdfsdfdf")
+    };
+})
 app.value("REST_API_SERVER", 'http://localhost:5000/');
 app.config(function($stateProvider, $urlRouterProvider) {
 
